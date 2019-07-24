@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="F:\git2back\public\js\main.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marquee Tag</title>
+    <style>
+    body {
+
+    background:url("abcd.jpg");
+    filter: brightness(100%);
+    background-size: 1600px 800px;
+    background-repeat: no-repeat;
+            }
+
+    .main {
+        text-align:centre;
+    }
+    .marq {
+        padding-top:100px;
+        padding-bottom:100px;
+    }
+    .geek1 {
+        color:white;
+        font-size:100px;
+        font-weight:bolder ;
+        padding-bottom:10px;
+    }
+    p{
+      color : white
+    }
+
+            h1 {
+                color:Blue;
+            }
+            h2{
+              color:white;
+            }
+      .button {
+      padding: 15px 25px;
+      font-size: 40px;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      color: #fff;
+      background-color: transparent;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;}
+      .button:hover {background-color: #a0a0a0}
+
+.button:active {
+  background-color: #a0a0a0;
+  box-shadow: 0 5px #666;
+
+}
+
+nav{
+float:right;
+line-height:30px;
+height:560px;
+width:700px;
+padding-right:100px;
+}
+section{
+float:left;
+padding:5px;
+}
+        </style>
+</head>
+
+<body>
+  
+
+  <div id= "myDiv"></div>
+    <div class = "main">
+    <marquee class="marq" bgcolor = transparent direction = "left" loop="" >
+        <div class="geek1">Fx Trading Simulator</div>
+            </marquee>
+
+<section>
+<center>
+    <button1 style = "margin:200px;" class="button" id="b1">Services</button1><br><br><br><br><br>
+    <button2 style = "margin:200px;" class="button" id="b2">Order Book</button2><br><br><br><br><br>
+    <button3 style = "margin:200px;" class="button" id="b3">Rate History</button3>
+  </center>
+</section>
+
+
+<nav>
+
+
+    <h2 id="w1">Foreign exchange is a process of changing one curency into another for a variety of reasons usually for commerce,trading or tourism.</h2>
+    </nav>
+
+
+<script>
+
+var x=document.getElementById("b1");
+x.addEventListener("mouseover",func1);
+x.addEventListener("mouseout",func11);
+var y=document.getElementById("b2");
+y.addEventListener("mouseover",func2);
+y.addEventListener("mouseout",func22);
+var z=document.getElementById("b3");
+z.addEventListener("mouseover",func3);
+z.addEventListener("mouseout",func33);
+function func1(){
+document.getElementById("w1").innerHTML="This is a foreign exchange market where you trade currieneces.It includes all ascpects of buying ,selling and exchaning curriences at current or determined prices.";
+}
+
+function func11(){
+document.getElementById("w1").innerHTML="Foreign exchange is a process of changing one curency into another for a variety of reasons usually for commerce,trading or tourism.";
+}
+
+function func2(){
+document.getElementById("w1").innerHTML="This is used to maintain the records of our previous transcations.";
+}
+
+function func22(){
+document.getElementById("w1").innerHTML="Foreign exchange is a process of changing one curency into another for a variety of reasons usually for commerce,trading or tourism.";
+}
+function func3(){
+document.getElementById("w1").innerHTML="It helps to access our weekly market analyses and discover how your currency has been tracking with our exchange rates tools.";
+}
+
+function func33(){
+document.getElementById("w1").innerHTML="Foreign exchange is a process of changing one curency into another for a variety of reasons usually for commerce,trading or tourism.";
+}
+</script>
+
+
+</body>
+</html>
